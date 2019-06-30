@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5:  Fichier source de group.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">group.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="group_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __GROUP_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __GROUP_H__</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gconst_8h.html">gconst.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//Group structure</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structgroup.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structgroup.html#afbe0a70d4d8f0e3df77ec516d0926b23">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structgroup.html#afbe0a70d4d8f0e3df77ec516d0926b23">descriptor</a>;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structgroup.html#a63c89c04d1feae07ca35558055155ffb">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structgroup.html#a63c89c04d1feae07ca35558055155ffb">port</a>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structgroup.html#a3f1442faab3c897867d0566d2825501e">   10</a></span>&#160;    <span class="keywordtype">char</span> addip[<a class="code" href="gconst_8h.html#a39912bfe2a55f30e269196f9141d845d">BUFFSIZE</a>];</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structgroup.html#a831d0ecc6681210dd83bdf64a4bc891a">   11</a></span>&#160;    <span class="keywordtype">char</span> name[<a class="code" href="gconst_8h.html#ad79aefee6a8990632311a15e98d9a65f">NAMESIZE</a>];</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} <a class="code" href="structgroup.html">group</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group_8h.html#aba7e695e23721c854e66247f21a1cb91">displayGroup</a>(<a class="code" href="structgroup.html">group</a> *g);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="structgroup.html">group</a> *<a class="code" href="group_8h.html#a9e2c1d5f70413b63ba92aaab4b3ccbd3">makeGroup</a>(<span class="keywordtype">int</span> descriptor, <span class="keywordtype">int</span> port, <span class="keywordtype">char</span>* addip, <span class="keywordtype">char</span> * name);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="structgroup.html">group</a> *<a class="code" href="group_8h.html#ac762b6928f79cccb449e2b64d6d020df">makeNullGroup</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group_8h.html#a12764a80cbf806f727f0cf98bd4a71ef">destroyGroup</a>(<a class="code" href="structgroup.html">group</a> *g);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group_8h.html#ac2f7a7111c3371939533a15a3c6021f0">compareGroup</a>(<a class="code" href="structgroup.html">group</a> * g1, <a class="code" href="structgroup.html">group</a> * g2);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structgroup_html_afbe0a70d4d8f0e3df77ec516d0926b23"><div class="ttname"><a href="structgroup.html#afbe0a70d4d8f0e3df77ec516d0926b23">group::descriptor</a></div><div class="ttdeci">int descriptor</div><div class="ttdef"><b>Definition:</b> group.h:8</div></div>
+<div class="ttc" id="group_8h_html_ac762b6928f79cccb449e2b64d6d020df"><div class="ttname"><a href="group_8h.html#ac762b6928f79cccb449e2b64d6d020df">makeNullGroup</a></div><div class="ttdeci">group * makeNullGroup()</div><div class="ttdef"><b>Definition:</b> group.c:37</div></div>
+<div class="ttc" id="group_8h_html_a9e2c1d5f70413b63ba92aaab4b3ccbd3"><div class="ttname"><a href="group_8h.html#a9e2c1d5f70413b63ba92aaab4b3ccbd3">makeGroup</a></div><div class="ttdeci">group * makeGroup(int descriptor, int port, char *addip, char *name)</div><div class="ttdef"><b>Definition:</b> group.c:24</div></div>
+<div class="ttc" id="gconst_8h_html_a39912bfe2a55f30e269196f9141d845d"><div class="ttname"><a href="gconst_8h.html#a39912bfe2a55f30e269196f9141d845d">BUFFSIZE</a></div><div class="ttdeci">#define BUFFSIZE</div><div class="ttdef"><b>Definition:</b> gconst.h:5</div></div>
+<div class="ttc" id="gconst_8h_html_ad79aefee6a8990632311a15e98d9a65f"><div class="ttname"><a href="gconst_8h.html#ad79aefee6a8990632311a15e98d9a65f">NAMESIZE</a></div><div class="ttdeci">#define NAMESIZE</div><div class="ttdef"><b>Definition:</b> gconst.h:8</div></div>
+<div class="ttc" id="group_8h_html_ac2f7a7111c3371939533a15a3c6021f0"><div class="ttname"><a href="group_8h.html#ac2f7a7111c3371939533a15a3c6021f0">compareGroup</a></div><div class="ttdeci">int compareGroup(group *g1, group *g2)</div><div class="ttdef"><b>Definition:</b> group.c:56</div></div>
+<div class="ttc" id="group_8h_html_aba7e695e23721c854e66247f21a1cb91"><div class="ttname"><a href="group_8h.html#aba7e695e23721c854e66247f21a1cb91">displayGroup</a></div><div class="ttdeci">void displayGroup(group *g)</div><div class="ttdef"><b>Definition:</b> group.c:12</div></div>
+<div class="ttc" id="gconst_8h_html"><div class="ttname"><a href="gconst_8h.html">gconst.h</a></div></div>
+<div class="ttc" id="structgroup_html"><div class="ttname"><a href="structgroup.html">group</a></div><div class="ttdef"><b>Definition:</b> group.h:7</div></div>
+<div class="ttc" id="group_8h_html_a12764a80cbf806f727f0cf98bd4a71ef"><div class="ttname"><a href="group_8h.html#a12764a80cbf806f727f0cf98bd4a71ef">destroyGroup</a></div><div class="ttdeci">void destroyGroup(group *g)</div><div class="ttdef"><b>Definition:</b> group.c:46</div></div>
+<div class="ttc" id="structgroup_html_a63c89c04d1feae07ca35558055155ffb"><div class="ttname"><a href="structgroup.html#a63c89c04d1feae07ca35558055155ffb">group::port</a></div><div class="ttdeci">int port</div><div class="ttdef"><b>Definition:</b> group.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

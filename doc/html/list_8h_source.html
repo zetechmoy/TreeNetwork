@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5:  Fichier source de list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="list_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __LISTE_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __LISTE_H__</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="group_8h.html">group.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//Basic linkedlist structure customed for groups (process)</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structnode.html">    8</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structnode.html">node</a> {</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">    9</a></span>&#160;    <a class="code" href="structgroup.html">group</a> *<a class="code" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">g</a>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">   10</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structnode.html">node</a> *<a class="code" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a>;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structnode.html#a439227feff9d7f55384e8780cfc2eb82">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structnode.html#a439227feff9d7f55384e8780cfc2eb82">size</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} <a class="code" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="structnode.html">List</a> * <a class="code" href="list_8h.html#a1aa72ffbddea0f7d76fd0a5c58b6661c">makeList</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="list_8h.html#ab4d3ff4c4b7321a02ae33d7aac45f462">add</a>(<a class="code" href="structgroup.html">group</a> *<a class="code" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">g</a>, <a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="structgroup.html">group</a>* <span class="keyword">delete</span>(<a class="code" href="structgroup.html">group</a> *<a class="code" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">g</a>, <a class="code" href="structnode.html">List</a> * L);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="list_8h.html#ad7c83a257519edabb97cbf6be20e553b">add_head</a>(<a class="code" href="structgroup.html">group</a> *<a class="code" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">g</a>, <a class="code" href="structnode.html">List</a> *l);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structgroup.html">group</a> * <a class="code" href="list_8h.html#a7448c5765b490987b2e610ef8bab98ae">remove_first</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="structgroup.html">group</a> * <a class="code" href="list_8h.html#a0e4cf11a9e7954bf547f092e96bae6ed">get_first</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structgroup.html">group</a> * <a class="code" href="list_8h.html#a6767b492ac7fd0e667c2bf1f9733af20">get_last</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="list_8h.html#a1a2c53d93cdb32b9827e285d9616a76b">destroy</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="structnode.html#a439227feff9d7f55384e8780cfc2eb82">size</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="structgroup.html">group</a>* <a class="code" href="list_8h.html#a87f168f8bf57e8d79ead88ca4e0cfe7f">search_by_desc</a>(<span class="keywordtype">int</span> descriptor, <a class="code" href="structnode.html">List</a> * L);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="structgroup.html">group</a>* <a class="code" href="list_8h.html#a033e5ace85521ffd4c8f70b9da622e8a">search_by_port</a>(<span class="keywordtype">int</span> port, <a class="code" href="structnode.html">List</a> * L);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">int</span> <a class="code" href="list_8h.html#ae2eefe954804bdb7c09aed1eb9df90fc">check_is_in</a>(<a class="code" href="structgroup.html">group</a> * <a class="code" href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">g</a>, <a class="code" href="structnode.html">List</a> * L);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="list_8h.html#a7cbf14d5de4cc24ab3993d561feef5fb">display</a>(<a class="code" href="structnode.html">List</a> * L);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="structnode.html">List</a> * <a class="code" href="list_8h.html#ac1ec87f70036581ec9b8fbb94a480fb5">list_concat</a>(<a class="code" href="structnode.html">List</a> * l1, <a class="code" href="structnode.html">List</a> * l2);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;fd_set * <a class="code" href="list_8h.html#ac7040d141ca95b2189b0fb77448ed669">listToFDSET</a>(<a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> list.h:8</div></div>
+<div class="ttc" id="list_8h_html_ac1ec87f70036581ec9b8fbb94a480fb5"><div class="ttname"><a href="list_8h.html#ac1ec87f70036581ec9b8fbb94a480fb5">list_concat</a></div><div class="ttdeci">List * list_concat(List *l1, List *l2)</div><div class="ttdef"><b>Definition:</b> list.c:150</div></div>
+<div class="ttc" id="group_8h_html"><div class="ttname"><a href="group_8h.html">group.h</a></div></div>
+<div class="ttc" id="list_8h_html_ab4d3ff4c4b7321a02ae33d7aac45f462"><div class="ttname"><a href="list_8h.html#ab4d3ff4c4b7321a02ae33d7aac45f462">add</a></div><div class="ttdeci">void add(group *g, List *l)</div><div class="ttdef"><b>Definition:</b> list.c:15</div></div>
+<div class="ttc" id="list_8h_html_ac7040d141ca95b2189b0fb77448ed669"><div class="ttname"><a href="list_8h.html#ac7040d141ca95b2189b0fb77448ed669">listToFDSET</a></div><div class="ttdeci">fd_set * listToFDSET(List *l)</div><div class="ttdef"><b>Definition:</b> list.c:168</div></div>
+<div class="ttc" id="structnode_html_a4c590cac02bbf8d35be54b0d3fa23f2e"><div class="ttname"><a href="structnode.html#a4c590cac02bbf8d35be54b0d3fa23f2e">node::g</a></div><div class="ttdeci">group * g</div><div class="ttdef"><b>Definition:</b> list.h:9</div></div>
+<div class="ttc" id="list_8h_html_a87f168f8bf57e8d79ead88ca4e0cfe7f"><div class="ttname"><a href="list_8h.html#a87f168f8bf57e8d79ead88ca4e0cfe7f">search_by_desc</a></div><div class="ttdeci">group * search_by_desc(int descriptor, List *L)</div><div class="ttdef"><b>Definition:</b> list.c:104</div></div>
+<div class="ttc" id="list_8h_html_a7448c5765b490987b2e610ef8bab98ae"><div class="ttname"><a href="list_8h.html#a7448c5765b490987b2e610ef8bab98ae">remove_first</a></div><div class="ttdeci">group * remove_first(List *l)</div><div class="ttdef"><b>Definition:</b> list.c:63</div></div>
+<div class="ttc" id="list_8h_html_a033e5ace85521ffd4c8f70b9da622e8a"><div class="ttname"><a href="list_8h.html#a033e5ace85521ffd4c8f70b9da622e8a">search_by_port</a></div><div class="ttdeci">group * search_by_port(int port, List *L)</div><div class="ttdef"><b>Definition:</b> list.c:118</div></div>
+<div class="ttc" id="list_8h_html_a7cbf14d5de4cc24ab3993d561feef5fb"><div class="ttname"><a href="list_8h.html#a7cbf14d5de4cc24ab3993d561feef5fb">display</a></div><div class="ttdeci">void display(List *L)</div><div class="ttdef"><b>Definition:</b> list.c:131</div></div>
+<div class="ttc" id="list_8h_html_a0e4cf11a9e7954bf547f092e96bae6ed"><div class="ttname"><a href="list_8h.html#a0e4cf11a9e7954bf547f092e96bae6ed">get_first</a></div><div class="ttdeci">group * get_first(List *l)</div><div class="ttdef"><b>Definition:</b> list.c:71</div></div>
+<div class="ttc" id="list_8h_html_a6767b492ac7fd0e667c2bf1f9733af20"><div class="ttname"><a href="list_8h.html#a6767b492ac7fd0e667c2bf1f9733af20">get_last</a></div><div class="ttdeci">group * get_last(List *l)</div><div class="ttdef"><b>Definition:</b> list.c:79</div></div>
+<div class="ttc" id="structnode_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="structnode.html#a439227feff9d7f55384e8780cfc2eb82">node::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> list.h:11</div></div>
+<div class="ttc" id="list_8h_html_a1aa72ffbddea0f7d76fd0a5c58b6661c"><div class="ttname"><a href="list_8h.html#a1aa72ffbddea0f7d76fd0a5c58b6661c">makeList</a></div><div class="ttdeci">List * makeList()</div><div class="ttdef"><b>Definition:</b> list.c:7</div></div>
+<div class="ttc" id="list_8h_html_ae2eefe954804bdb7c09aed1eb9df90fc"><div class="ttname"><a href="list_8h.html#ae2eefe954804bdb7c09aed1eb9df90fc">check_is_in</a></div><div class="ttdeci">int check_is_in(group *g, List *L)</div><div class="ttdef"><b>Definition:</b> list.c:139</div></div>
+<div class="ttc" id="structgroup_html"><div class="ttname"><a href="structgroup.html">group</a></div><div class="ttdef"><b>Definition:</b> group.h:7</div></div>
+<div class="ttc" id="list_8h_html_a1a2c53d93cdb32b9827e285d9616a76b"><div class="ttname"><a href="list_8h.html#a1a2c53d93cdb32b9827e285d9616a76b">destroy</a></div><div class="ttdeci">void destroy(List *l)</div><div class="ttdef"><b>Definition:</b> list.c:87</div></div>
+<div class="ttc" id="structnode_html_a0dc1b6470487aa86d9936e3cab8b95be"><div class="ttname"><a href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">node::next</a></div><div class="ttdeci">struct node * next</div><div class="ttdef"><b>Definition:</b> list.h:10</div></div>
+<div class="ttc" id="list_8h_html_aa4ccd50c5e1ac1a087ddca7d3a51a0c1"><div class="ttname"><a href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a></div><div class="ttdeci">struct node List</div></div>
+<div class="ttc" id="list_8h_html_ad7c83a257519edabb97cbf6be20e553b"><div class="ttname"><a href="list_8h.html#ad7c83a257519edabb97cbf6be20e553b">add_head</a></div><div class="ttdeci">void add_head(group *g, List *l)</div><div class="ttdef"><b>Definition:</b> list.c:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

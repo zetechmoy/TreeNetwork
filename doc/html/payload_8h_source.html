@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5:  Fichier source de payload.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">payload.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="payload_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __PAYLOAD_H__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __PAYLOAD_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gconst_8h.html">gconst.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="group_8h.html">group.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="payload_8h.html#a87244d6d6c9f7de0d4a7bf7528c26f39">    7</a></span>&#160;<span class="preprocessor">#define PTYPE_MSG 1         //msg goes to a group</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="payload_8h.html#a105a4697e6266c6f5a5b58a3d814a73e">    8</a></span>&#160;<span class="preprocessor">#define PTYPE_MSGROOT 2     //msg goes to the root group</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="payload_8h.html#aca07d489f0752c1fbc058f4017b89b6e">    9</a></span>&#160;<span class="preprocessor">#define PTYPE_ATTACH 3      //attach</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="payload_8h.html#ad20dfd9f5a4c1f40fb70b6fbce9b7251">   10</a></span>&#160;<span class="preprocessor">#define PTYPE_BRDCST 4      //broadcast</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="payload_8h.html#aaa3ef51c345b9efbd119ff761eafa0bb">   11</a></span>&#160;<span class="preprocessor">#define PTYPE_DETACHFC 5    //detach from child</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="payload_8h.html#af5d517232ff07b007c034881b4690785">   12</a></span>&#160;<span class="preprocessor">#define PTYPE_DETACHFP 6    //detach from parent</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="payload_8h.html#ae0ad7e39ed2c3d665ec87be4f1374b5b">   13</a></span>&#160;<span class="preprocessor">#define PTYPE_NOTIFATT 7    //notif of attach</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="payload_8h.html#ad09ba6f08f983941e89c6e217e91f5ae">   14</a></span>&#160;<span class="preprocessor">#define PTYPE_NOTIFDET 8    //notif of detach</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="payload_8h.html#a4dab7a7250e82ab588982e65a4e07a8b">   15</a></span>&#160;<span class="preprocessor">#define PTYPE_FILEROOT 9    //file goes to a group</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="payload_8h.html#a0a1a92299dba006c59556cb602ffa351">   16</a></span>&#160;<span class="preprocessor">#define PTYPE_FILE 10       //file goes to the root group</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//payload structure</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structpayload.html">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structpayload.html#a43ac2b7e4a66605ad79e28131f388bee">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpayload.html#a43ac2b7e4a66605ad79e28131f388bee">ptype</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structpayload.html#ac29e87d057d26dc7b042e8ff56655ae2">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpayload.html#ac29e87d057d26dc7b042e8ff56655ae2">sender_port</a>;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structpayload.html#a8302345caf9ea802525d28c39cedb541">   23</a></span>&#160;    <span class="keywordtype">char</span> sender_ip[<a class="code" href="gconst_8h.html#a1e7c6ffac5a7fb4c81d656dca1ef7c53">IPSIZE</a>];</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structpayload.html#aac0f5b41d680540fbf936d8121aedf17">   24</a></span>&#160;    <span class="keywordtype">char</span> sender_name[<a class="code" href="gconst_8h.html#ad79aefee6a8990632311a15e98d9a65f">NAMESIZE</a>];</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structpayload.html#a0c55d67a9ccfa71956bf93dd57d785a0">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpayload.html#a0c55d67a9ccfa71956bf93dd57d785a0">recver_port</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structpayload.html#acf3fc0ddffa6e06e7015d85f2b0f11ad">   26</a></span>&#160;    <span class="keywordtype">char</span> recver_ip[<a class="code" href="gconst_8h.html#a1e7c6ffac5a7fb4c81d656dca1ef7c53">IPSIZE</a>];</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structpayload.html#a7f851b531debb9b52f918c08e517fbf7">   27</a></span>&#160;    <span class="keywordtype">char</span> recver_name[<a class="code" href="gconst_8h.html#ad79aefee6a8990632311a15e98d9a65f">NAMESIZE</a>];</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structpayload.html#abf4a87887cddebd5a18a94635d7a19cf">   28</a></span>&#160;    <span class="keywordtype">char</span> content[150*<a class="code" href="gconst_8h.html#a39912bfe2a55f30e269196f9141d845d">BUFFSIZE</a>];</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <a class="code" href="structpayload.html">payload</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structpayload.html">payload</a> * <a class="code" href="payload_8h.html#af40c86b133f8f4253fc1c0474dab0889">createPayload</a>(<span class="keywordtype">int</span> ptype, <span class="keywordtype">int</span> sender_port, <span class="keywordtype">char</span>* sender_ip, <span class="keywordtype">char</span>* sender_name, <span class="keywordtype">int</span> recver_port, <span class="keywordtype">char</span>* recver_ip, <span class="keywordtype">char</span>* recver_name, <span class="keywordtype">char</span> * content);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="structpayload.html">payload</a> * <a class="code" href="payload_8h.html#aadcb064db5e77e31199e1a15ee8fe0fa">createPayloadFromGroups</a>(<span class="keywordtype">int</span> ptype, <a class="code" href="structgroup.html">group</a> * sender_group, <a class="code" href="structgroup.html">group</a> * recver_group, <span class="keywordtype">char</span> * content);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="structpayload.html">payload</a> * <a class="code" href="payload_8h.html#a64fc8b09a55e65b1d322980e031be009">createEmptyPayload</a>();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="payload_8h.html#a3ab07c8e409bdcc53b8955522d2e65e5">displayPayload</a>(<a class="code" href="structpayload.html">payload</a> * p);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="gconst_8h_html_a1e7c6ffac5a7fb4c81d656dca1ef7c53"><div class="ttname"><a href="gconst_8h.html#a1e7c6ffac5a7fb4c81d656dca1ef7c53">IPSIZE</a></div><div class="ttdeci">#define IPSIZE</div><div class="ttdef"><b>Definition:</b> gconst.h:6</div></div>
+<div class="ttc" id="group_8h_html"><div class="ttname"><a href="group_8h.html">group.h</a></div></div>
+<div class="ttc" id="structpayload_html_a0c55d67a9ccfa71956bf93dd57d785a0"><div class="ttname"><a href="structpayload.html#a0c55d67a9ccfa71956bf93dd57d785a0">payload::recver_port</a></div><div class="ttdeci">int recver_port</div><div class="ttdef"><b>Definition:</b> payload.h:25</div></div>
+<div class="ttc" id="gconst_8h_html_a39912bfe2a55f30e269196f9141d845d"><div class="ttname"><a href="gconst_8h.html#a39912bfe2a55f30e269196f9141d845d">BUFFSIZE</a></div><div class="ttdeci">#define BUFFSIZE</div><div class="ttdef"><b>Definition:</b> gconst.h:5</div></div>
+<div class="ttc" id="structpayload_html"><div class="ttname"><a href="structpayload.html">payload</a></div><div class="ttdef"><b>Definition:</b> payload.h:20</div></div>
+<div class="ttc" id="gconst_8h_html_ad79aefee6a8990632311a15e98d9a65f"><div class="ttname"><a href="gconst_8h.html#ad79aefee6a8990632311a15e98d9a65f">NAMESIZE</a></div><div class="ttdeci">#define NAMESIZE</div><div class="ttdef"><b>Definition:</b> gconst.h:8</div></div>
+<div class="ttc" id="structpayload_html_a43ac2b7e4a66605ad79e28131f388bee"><div class="ttname"><a href="structpayload.html#a43ac2b7e4a66605ad79e28131f388bee">payload::ptype</a></div><div class="ttdeci">int ptype</div><div class="ttdef"><b>Definition:</b> payload.h:21</div></div>
+<div class="ttc" id="gconst_8h_html"><div class="ttname"><a href="gconst_8h.html">gconst.h</a></div></div>
+<div class="ttc" id="payload_8h_html_aadcb064db5e77e31199e1a15ee8fe0fa"><div class="ttname"><a href="payload_8h.html#aadcb064db5e77e31199e1a15ee8fe0fa">createPayloadFromGroups</a></div><div class="ttdeci">payload * createPayloadFromGroups(int ptype, group *sender_group, group *recver_group, char *content)</div><div class="ttdef"><b>Definition:</b> payload.c:46</div></div>
+<div class="ttc" id="structgroup_html"><div class="ttname"><a href="structgroup.html">group</a></div><div class="ttdef"><b>Definition:</b> group.h:7</div></div>
+<div class="ttc" id="payload_8h_html_a3ab07c8e409bdcc53b8955522d2e65e5"><div class="ttname"><a href="payload_8h.html#a3ab07c8e409bdcc53b8955522d2e65e5">displayPayload</a></div><div class="ttdeci">void displayPayload(payload *p)</div><div class="ttdef"><b>Definition:</b> payload.c:70</div></div>
+<div class="ttc" id="payload_8h_html_a64fc8b09a55e65b1d322980e031be009"><div class="ttname"><a href="payload_8h.html#a64fc8b09a55e65b1d322980e031be009">createEmptyPayload</a></div><div class="ttdeci">payload * createEmptyPayload()</div><div class="ttdef"><b>Definition:</b> payload.c:53</div></div>
+<div class="ttc" id="payload_8h_html_af40c86b133f8f4253fc1c0474dab0889"><div class="ttname"><a href="payload_8h.html#af40c86b133f8f4253fc1c0474dab0889">createPayload</a></div><div class="ttdeci">payload * createPayload(int ptype, int sender_port, char *sender_ip, char *sender_name, int recver_port, char *recver_ip, char *recver_name, char *content)</div><div class="ttdef"><b>Definition:</b> payload.c:22</div></div>
+<div class="ttc" id="structpayload_html_ac29e87d057d26dc7b042e8ff56655ae2"><div class="ttname"><a href="structpayload.html#ac29e87d057d26dc7b042e8ff56655ae2">payload::sender_port</a></div><div class="ttdeci">int sender_port</div><div class="ttdef"><b>Definition:</b> payload.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

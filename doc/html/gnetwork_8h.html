@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Référence du fichier gnetwork.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier gnetwork.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="group_8h_source.html">group.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="payload_8h_source.html">payload.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
+</div>
+<p><a href="gnetwork_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a81236015fd64bb2486ebb56b75f8d733"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a81236015fd64bb2486ebb56b75f8d733">attach</a> (int parent_port, char *parent_ip, <a class="el" href="structgroup.html">group</a> *child_group, <a class="el" href="structgroup.html">group</a> *parent_group, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a81236015fd64bb2486ebb56b75f8d733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac979c45c9cb02e10328035c074a7b05f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ac979c45c9cb02e10328035c074a7b05f">detach</a> (<a class="el" href="structgroup.html">group</a> *child_group, <a class="el" href="structgroup.html">group</a> *parent_group, int detach_type, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:ac979c45c9cb02e10328035c074a7b05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5882d64419f2b5ab95dacbd7ab1a0f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ae5882d64419f2b5ab95dacbd7ab1a0f4">detachFromParent</a> (<a class="el" href="structgroup.html">group</a> *child_group, <a class="el" href="structgroup.html">group</a> *parent_group, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:ae5882d64419f2b5ab95dacbd7ab1a0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bde6ac2655d529a1489a67e7fd421b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ab0bde6ac2655d529a1489a67e7fd421b">detachFromChild</a> (<a class="el" href="structgroup.html">group</a> *child_group, <a class="el" href="structgroup.html">group</a> *parent_group, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:ab0bde6ac2655d529a1489a67e7fd421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e884dc2ffe111f6834705989cc1d3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a61e884dc2ffe111f6834705989cc1d3f">sendPayload</a> (<a class="el" href="structpayload.html">payload</a> *p, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:a61e884dc2ffe111f6834705989cc1d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54477708e87a8051c5d0e8b9a4843850"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a54477708e87a8051c5d0e8b9a4843850">readPayload</a> (<a class="el" href="structpayload.html">payload</a> *p, <a class="el" href="structgroup.html">group</a> *recv_group)</td></tr>
+<tr class="separator:a54477708e87a8051c5d0e8b9a4843850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218f03710038663d23d1415007bc8506"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a218f03710038663d23d1415007bc8506">sendString</a> (char *str, int msg_type, <a class="el" href="structgroup.html">group</a> *src_group, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:a218f03710038663d23d1415007bc8506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cca51532f0db5d201ef36a470c7e1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a18cca51532f0db5d201ef36a470c7e1c">readString</a> (char *str, int msg_type, <a class="el" href="structgroup.html">group</a> *src_group, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:a18cca51532f0db5d201ef36a470c7e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3871bdc618a8063f14d5507498d1c6bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a3871bdc618a8063f14d5507498d1c6bc">sendMsg</a> (char *<a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a>, <a class="el" href="structgroup.html">group</a> *src_group, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:a3871bdc618a8063f14d5507498d1c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44848fa4d26f84837da0fc21380f957d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a44848fa4d26f84837da0fc21380f957d">readMsg</a> (char *<a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a>, <a class="el" href="structgroup.html">group</a> *src_group, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:a44848fa4d26f84837da0fc21380f957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab730a073055f35557a01734f5c63dd6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ab730a073055f35557a01734f5c63dd6f">broadcast</a> (char *<a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a>, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group)</td></tr>
+<tr class="separator:ab730a073055f35557a01734f5c63dd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ec6daf6d12eb96f371f6165b6c34ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a> (char *msg, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group, <a class="el" href="structgroup.html">group</a> *final_dest_group, int msg_type)</td></tr>
+<tr class="separator:ad8ec6daf6d12eb96f371f6165b6c34ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2acfd5b9e329e2bfc0b170825f729d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#ac2acfd5b9e329e2bfc0b170825f729d8">msgRoot</a> (char *<a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a>, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group, <a class="el" href="structgroup.html">group</a> *final_dest_group)</td></tr>
+<tr class="separator:ac2acfd5b9e329e2bfc0b170825f729d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c6138034434bb068d6008de2d738a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a21c6138034434bb068d6008de2d738a9">msgGroup</a> (char *<a class="el" href="gnetwork_8h.html#ad8ec6daf6d12eb96f371f6165b6c34ce">msg</a>, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group, <a class="el" href="structgroup.html">group</a> *final_dest_group)</td></tr>
+<tr class="separator:a21c6138034434bb068d6008de2d738a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d29aa23aed4c85d4b63ec1ca60f6a67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a5d29aa23aed4c85d4b63ec1ca60f6a67">fileRoot</a> (char *message, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group, <a class="el" href="structgroup.html">group</a> *final_dest_group)</td></tr>
+<tr class="separator:a5d29aa23aed4c85d4b63ec1ca60f6a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee8f5ebf0caac83f9029533305dc511"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#a5ee8f5ebf0caac83f9029533305dc511">fileGroup</a> (char *message, <a class="el" href="structgroup.html">group</a> *from, <a class="el" href="structgroup.html">group</a> *dest_group, <a class="el" href="structgroup.html">group</a> *final_dest_group)</td></tr>
+<tr class="separator:a5ee8f5ebf0caac83f9029533305dc511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec940d4d463db48f702c95f4af53885"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#afec940d4d463db48f702c95f4af53885">notifyAttach</a> (<a class="el" href="structgroup.html">group</a> *new_group, <a class="el" href="structgroup.html">group</a> *local_group, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:afec940d4d463db48f702c95f4af53885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c92f91d09ed34c56ad3ded39318fa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gnetwork_8h.html#aa8c92f91d09ed34c56ad3ded39318fa9">notifyDetach</a> (<a class="el" href="structgroup.html">group</a> *new_group, <a class="el" href="structgroup.html">group</a> *local_group, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:aa8c92f91d09ed34c56ad3ded39318fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a81236015fd64bb2486ebb56b75f8d733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81236015fd64bb2486ebb56b75f8d733">&#9670;&nbsp;</a></span>attach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int attach </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>parent_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>parent_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>child_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>parent_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attach the current process to another process with port parent_port, it can be used to attach a child to a parent or a parent to a child </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_port</td><td>the port of the process to attach </td></tr>
+    <tr><td class="paramname">child_group</td><td>the child to attach </td></tr>
+    <tr><td class="paramname">parent_group</td><td>the parent group </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ac979c45c9cb02e10328035c074a7b05f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac979c45c9cb02e10328035c074a7b05f">&#9670;&nbsp;</a></span>detach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>child_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>parent_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>detach_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current process from another process with port parent_port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child_group</td><td>the child to attach </td></tr>
+    <tr><td class="paramname">parent_group</td><td>the parent group </td></tr>
+    <tr><td class="paramname">detach_type</td><td>detach from parent or detach from child ? </td></tr>
+    <tr><td class="paramname">parents_list</td><td>list of process' parents </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ae5882d64419f2b5ab95dacbd7ab1a0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5882d64419f2b5ab95dacbd7ab1a0f4">&#9670;&nbsp;</a></span>detachFromParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detachFromParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>child_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>parent_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current process from another process with port parent_port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child_group</td><td>the child to attach </td></tr>
+    <tr><td class="paramname">parent_group</td><td>the parent group </td></tr>
+    <tr><td class="paramname">parents_list</td><td>list of process' parents </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ab0bde6ac2655d529a1489a67e7fd421b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bde6ac2655d529a1489a67e7fd421b">&#9670;&nbsp;</a></span>detachFromChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detachFromChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>child_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>parent_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current process from another process with port parent_port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child_group</td><td>the child to attach </td></tr>
+    <tr><td class="paramname">parent_group</td><td>the parent group </td></tr>
+    <tr><td class="paramname">parents_list</td><td>list of process' parents </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a61e884dc2ffe111f6834705989cc1d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e884dc2ffe111f6834705989cc1d3f">&#9670;&nbsp;</a></span>sendPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sendPayload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a payload to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>payload to send </td></tr>
+    <tr><td class="paramname">dest_group</td><td>where the payload will be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a54477708e87a8051c5d0e8b9a4843850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54477708e87a8051c5d0e8b9a4843850">&#9670;&nbsp;</a></span>readPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readPayload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>recv_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read a payload from a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>payload to read </td></tr>
+    <tr><td class="paramname">recv_group</td><td>where the payload will be read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a218f03710038663d23d1415007bc8506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218f03710038663d23d1415007bc8506">&#9670;&nbsp;</a></span>sendString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sendString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msg_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>src_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a string to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>string to send </td></tr>
+    <tr><td class="paramname">msg_type</td><td>the type of message (CMD/MSG...) </td></tr>
+    <tr><td class="paramname">src_group</td><td>the group which send the string </td></tr>
+    <tr><td class="paramname">dest_group</td><td>where the payload will be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a18cca51532f0db5d201ef36a470c7e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18cca51532f0db5d201ef36a470c7e1c">&#9670;&nbsp;</a></span>readString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msg_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>src_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read a string from a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>string to read </td></tr>
+    <tr><td class="paramname">msg_type</td><td>the type of message (CMD/MSG...) </td></tr>
+    <tr><td class="paramname">src_group</td><td>the group which send the string </td></tr>
+    <tr><td class="paramname">dest_group</td><td>where the payload will be read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a3871bdc618a8063f14d5507498d1c6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3871bdc618a8063f14d5507498d1c6bc">&#9670;&nbsp;</a></span>sendMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sendMsg </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>src_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a message to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">src_group</td><td>the group which send the string </td></tr>
+    <tr><td class="paramname">dest_group</td><td>where the payload will be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a44848fa4d26f84837da0fc21380f957d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44848fa4d26f84837da0fc21380f957d">&#9670;&nbsp;</a></span>readMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readMsg </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>src_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read a message from a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">src_group</td><td>the group which receive the string </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group which has sent the string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ab730a073055f35557a01734f5c63dd6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab730a073055f35557a01734f5c63dd6f">&#9670;&nbsp;</a></span>broadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int broadcast </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send en msg to every child of a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where i sent the broadcast </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to each children </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ad8ec6daf6d12eb96f371f6165b6c34ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ec6daf6d12eb96f371f6165b6c34ce">&#9670;&nbsp;</a></span>msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int msg </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>final_dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msg_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a msg to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the msg is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the msg will be handled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success</dd></dl>
+<p>Send a msg to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the msg is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the msg will be handled </td></tr>
+    <tr><td class="paramname">msg_type</td><td>MSG_ROOT (going top in the tree) or MSG_GRP (going down in the tree) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="ac2acfd5b9e329e2bfc0b170825f729d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2acfd5b9e329e2bfc0b170825f729d8">&#9670;&nbsp;</a></span>msgRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int msgRoot </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>final_dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a msg to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the msg is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the msg will be handled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a21c6138034434bb068d6008de2d738a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c6138034434bb068d6008de2d738a9">&#9670;&nbsp;</a></span>msgGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int msgGroup </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>final_dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a msg to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the msg is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the msg will be handled </td></tr>
+    <tr><td class="paramname">msg_type</td><td>MSG_ROOT (going top in the tree) or MSG_GRP (going down in the tree) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success</dd></dl>
+<p>Send a msg to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the msg is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the message will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the msg will be handled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a5d29aa23aed4c85d4b63ec1ca60f6a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d29aa23aed4c85d4b63ec1ca60f6a67">&#9670;&nbsp;</a></span>fileRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fileRoot </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>final_dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a file to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>file to send (name + content) </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the file is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the file will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the file will be handled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="a5ee8f5ebf0caac83f9029533305dc511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee8f5ebf0caac83f9029533305dc511">&#9670;&nbsp;</a></span>fileGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fileGroup </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>dest_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>final_dest_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a file to a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>file to send </td></tr>
+    <tr><td class="paramname">from</td><td>the local group from where the file is sent </td></tr>
+    <tr><td class="paramname">dest_group</td><td>the group where the file will be sent to pass through the tree </td></tr>
+    <tr><td class="paramname">final_dest_group</td><td>the group where the file will be handled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="afec940d4d463db48f702c95f4af53885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec940d4d463db48f702c95f4af53885">&#9670;&nbsp;</a></span>notifyAttach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int notifyAttach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>new_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>local_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send an attach notification to a group telling what's happening in sub-tree </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">incoming_group</td><td>the group which is arriving in the tree (passed through the tree) </td></tr>
+    <tr><td class="paramname">local_group</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of group of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+<a id="aa8c92f91d09ed34c56ad3ded39318fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c92f91d09ed34c56ad3ded39318fa9">&#9670;&nbsp;</a></span>notifyDetach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int notifyDetach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>new_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>local_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a detach notification to a group telling what's happening in sub-tree </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_group</td><td>the group which is leaving in the tree (passed through the tree) </td></tr>
+    <tr><td class="paramname">local_group</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of group of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if error, and 1 if success </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

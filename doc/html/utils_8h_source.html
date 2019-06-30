@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5:  Fichier source de utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utils_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __UTILS_H__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __UTILS_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="list_8h.html">list.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="payload_8h.html">payload.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#a370dd92e92c5b6038bbc81e476ec8933">parseArgs</a>(<span class="keywordtype">char</span> * cmd, <span class="keywordtype">char</span> * args[]);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a4700cec4eb5fbc60fd04173a6cefbc4f">getIP</a>(<span class="keywordtype">char</span>* iface, <span class="keyword">struct</span> in_addr *addr);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#aff513150166d000b91ac2863258a0505">isRoot</a>(<a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a16ddaa0424615393ed09ce3abb5144cb">historilog</a>(<a class="code" href="structpayload.html">payload</a> *p);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structgroup.html">group</a> * <a class="code" href="utils_8h.html#ab720ebc26700f32401d6f661f3a0c499">getGroupFromName</a>(<span class="keywordtype">char</span> * group_name, <a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="structgroup.html">group</a> * <a class="code" href="utils_8h.html#ae790368b9ac78c12f295d0831b8ab70f">getGroupFromIPPort</a>(<span class="keywordtype">char</span> * ip, <span class="keywordtype">int</span> port, <a class="code" href="structnode.html">List</a> * l);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a8324b80cf1c3ddc356f274720178818c">deleteLineBreaks</a>(<span class="keywordtype">char</span> * str);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> list.h:8</div></div>
+<div class="ttc" id="utils_8h_html_a16ddaa0424615393ed09ce3abb5144cb"><div class="ttname"><a href="utils_8h.html#a16ddaa0424615393ed09ce3abb5144cb">historilog</a></div><div class="ttdeci">void historilog(payload *p)</div><div class="ttdef"><b>Definition:</b> utils.c:118</div></div>
+<div class="ttc" id="utils_8h_html_a370dd92e92c5b6038bbc81e476ec8933"><div class="ttname"><a href="utils_8h.html#a370dd92e92c5b6038bbc81e476ec8933">parseArgs</a></div><div class="ttdeci">int parseArgs(char *cmd, char *args[])</div><div class="ttdef"><b>Definition:</b> utils.c:29</div></div>
+<div class="ttc" id="structpayload_html"><div class="ttname"><a href="structpayload.html">payload</a></div><div class="ttdef"><b>Definition:</b> payload.h:20</div></div>
+<div class="ttc" id="payload_8h_html"><div class="ttname"><a href="payload_8h.html">payload.h</a></div></div>
+<div class="ttc" id="utils_8h_html_ab720ebc26700f32401d6f661f3a0c499"><div class="ttname"><a href="utils_8h.html#ab720ebc26700f32401d6f661f3a0c499">getGroupFromName</a></div><div class="ttdeci">group * getGroupFromName(char *group_name, List *l)</div><div class="ttdef"><b>Definition:</b> utils.c:166</div></div>
+<div class="ttc" id="utils_8h_html_a8324b80cf1c3ddc356f274720178818c"><div class="ttname"><a href="utils_8h.html#a8324b80cf1c3ddc356f274720178818c">deleteLineBreaks</a></div><div class="ttdeci">void deleteLineBreaks(char *str)</div><div class="ttdef"><b>Definition:</b> utils.c:204</div></div>
+<div class="ttc" id="list_8h_html"><div class="ttname"><a href="list_8h.html">list.h</a></div></div>
+<div class="ttc" id="utils_8h_html_ae790368b9ac78c12f295d0831b8ab70f"><div class="ttname"><a href="utils_8h.html#ae790368b9ac78c12f295d0831b8ab70f">getGroupFromIPPort</a></div><div class="ttdeci">group * getGroupFromIPPort(char *ip, int port, List *l)</div><div class="ttdef"><b>Definition:</b> utils.c:186</div></div>
+<div class="ttc" id="structgroup_html"><div class="ttname"><a href="structgroup.html">group</a></div><div class="ttdef"><b>Definition:</b> group.h:7</div></div>
+<div class="ttc" id="main_8c_html_a9509e27a92e5fc3e98862a4c777c2371"><div class="ttname"><a href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a></div><div class="ttdeci">List * parents_list</div><div class="ttdef"><b>Definition:</b> main.c:31</div></div>
+<div class="ttc" id="utils_8h_html_a4700cec4eb5fbc60fd04173a6cefbc4f"><div class="ttname"><a href="utils_8h.html#a4700cec4eb5fbc60fd04173a6cefbc4f">getIP</a></div><div class="ttdeci">void getIP(char *iface, struct in_addr *addr)</div><div class="ttdef"><b>Definition:</b> utils.c:83</div></div>
+<div class="ttc" id="utils_8h_html_aff513150166d000b91ac2863258a0505"><div class="ttname"><a href="utils_8h.html#aff513150166d000b91ac2863258a0505">isRoot</a></div><div class="ttdeci">int isRoot(List *parents_list)</div><div class="ttdef"><b>Definition:</b> utils.c:107</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

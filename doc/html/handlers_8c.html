@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Référence du fichier handlers.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier handlers.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/select.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;getopt.h&gt;</code><br />
+<code>#include &lt;ifaddrs.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="gconst_8h_source.html">gconst.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gnetwork_8h_source.html">gnetwork.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="group_8h_source.html">group.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ad131f037b769dd4da88867e481ff93d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#ad131f037b769dd4da88867e481ff93d3">handeNewClientAttach</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *new_child_group, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:ad131f037b769dd4da88867e481ff93d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab367142c0366141c61b7a8281dbac16d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#ab367142c0366141c61b7a8281dbac16d">handleDetach</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:ab367142c0366141c61b7a8281dbac16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91444592a8e826ab348abe61eddc7042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#a91444592a8e826ab348abe61eddc7042">handleMsg</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a91444592a8e826ab348abe61eddc7042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8439dd1f7b7c08ff70cc3ed41572bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#a4f8439dd1f7b7c08ff70cc3ed41572bb">handleNotifAttach</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a4f8439dd1f7b7c08ff70cc3ed41572bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddba1e2856ac12ef5b42b954ecd9670"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#aaddba1e2856ac12ef5b42b954ecd9670">handleNotifDetach</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:aaddba1e2856ac12ef5b42b954ecd9670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4546113da554aa4089cad80d03e4b078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handlers_8c.html#a4546113da554aa4089cad80d03e4b078">handleFile</a> (<a class="el" href="structpayload.html">payload</a> *read_p, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a4546113da554aa4089cad80d03e4b078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ad131f037b769dd4da88867e481ff93d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad131f037b769dd4da88867e481ff93d3">&#9670;&nbsp;</a></span>handeNewClientAttach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handeNewClientAttach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>new_child_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle a payload of type attach </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_p</td><td>the received payload </td></tr>
+    <tr><td class="paramname">new_child_group</td><td>the new incoming group </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process in group form </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current group </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab367142c0366141c61b7a8281dbac16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab367142c0366141c61b7a8281dbac16d">&#9670;&nbsp;</a></span>handleDetach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleDetach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle a payload of type detach </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_p</td><td>the received payload </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process in group form </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current group </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91444592a8e826ab348abe61eddc7042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91444592a8e826ab348abe61eddc7042">&#9670;&nbsp;</a></span>handleMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle a payload of type msg </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_p</td><td>the received payload </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process in group form </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current group </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f8439dd1f7b7c08ff70cc3ed41572bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8439dd1f7b7c08ff70cc3ed41572bb">&#9670;&nbsp;</a></span>handleNotifAttach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleNotifAttach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle a payload of type notif attach </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_p</td><td>the received payload </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process in group form </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaddba1e2856ac12ef5b42b954ecd9670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddba1e2856ac12ef5b42b954ecd9670">&#9670;&nbsp;</a></span>handleNotifDetach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleNotifDetach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle a payload of type notif detach </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_p</td><td>the received payload </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process in group form </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4546113da554aa4089cad80d03e4b078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4546113da554aa4089cad80d03e4b078">&#9670;&nbsp;</a></span>handleFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>read_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

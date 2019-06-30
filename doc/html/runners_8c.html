@@ -1,0 +1,940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Référence du fichier runners.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier runners.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/select.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;getopt.h&gt;</code><br />
+<code>#include &lt;ifaddrs.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="gconst_8h_source.html">gconst.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gnetwork_8h_source.html">gnetwork.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="group_8h_source.html">group.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aaa4f145bdf908826321ffec9018f1b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#aaa4f145bdf908826321ffec9018f1b7a">readTermCommand</a> (char *cmdIn, char **args)</td></tr>
+<tr class="separator:aaa4f145bdf908826321ffec9018f1b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924024be7a05779de628d4ef7ade012c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a924024be7a05779de628d4ef7ade012c">runAttachCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a924024be7a05779de628d4ef7ade012c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df46669c92b13ce6821211c73a9584f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a0df46669c92b13ce6821211c73a9584f">runAttachCommandName</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a0df46669c92b13ce6821211c73a9584f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6f790fddc0f087933d1013ed2384c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#aac6f790fddc0f087933d1013ed2384c9">runDetachCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:aac6f790fddc0f087933d1013ed2384c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2674a4eff194c0e51bfb92b5aa42a48a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a2674a4eff194c0e51bfb92b5aa42a48a">runDetachCommandName</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>)</td></tr>
+<tr class="separator:a2674a4eff194c0e51bfb92b5aa42a48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098ec9a654426c5eafd6e61674734736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a098ec9a654426c5eafd6e61674734736">runMsgCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a098ec9a654426c5eafd6e61674734736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7993ac85ba60c2cb414a79a1e9e38b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a7993ac85ba60c2cb414a79a1e9e38b6c">runMsgCommandName</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a7993ac85ba60c2cb414a79a1e9e38b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07958f539ad1f48798c72e3efb488e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a07958f539ad1f48798c72e3efb488e6f">runInfoCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a07958f539ad1f48798c72e3efb488e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb80f86802c502408b56bc6e8e179b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#adb80f86802c502408b56bc6e8e179b2b">runChildrenCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:adb80f86802c502408b56bc6e8e179b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa120e1691921fda8a44bd3453f9fce1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#aa120e1691921fda8a44bd3453f9fce1d">runParentsCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:aa120e1691921fda8a44bd3453f9fce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a7d457a7dae3bd3136485a57e264c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a22a7d457a7dae3bd3136485a57e264c5">runRoutingCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a22a7d457a7dae3bd3136485a57e264c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660c019776f903e0776701300d7ee438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a660c019776f903e0776701300d7ee438">runFileCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a660c019776f903e0776701300d7ee438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab856b9ee59c3acfa84dccd9677dc981f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#ab856b9ee59c3acfa84dccd9677dc981f">runFileCommandName</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:ab856b9ee59c3acfa84dccd9677dc981f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b56e04f1bfa90e7dc698a27be72598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runners_8c.html#a25b56e04f1bfa90e7dc698a27be72598">runHelpCommand</a> (char **args, int nb_arg, <a class="el" href="structgroup.html">group</a> *<a class="el" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:a25b56e04f1bfa90e7dc698a27be72598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aaa4f145bdf908826321ffec9018f1b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4f145bdf908826321ffec9018f1b7a">&#9670;&nbsp;</a></span>readTermCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readTermCommand </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cmdIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read command from terminal (std_in) </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>where will we stored to command </td></tr>
+    <tr><td class="paramname">args</td><td>where will be stored arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>number of args in cmd </dd></dl>
+
+</div>
+</div>
+<a id="a924024be7a05779de628d4ef7ade012c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924024be7a05779de628d4ef7ade012c">&#9670;&nbsp;</a></span>runAttachCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runAttachCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an attach command using ip/port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0df46669c92b13ce6821211c73a9584f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df46669c92b13ce6821211c73a9584f">&#9670;&nbsp;</a></span>runAttachCommandName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runAttachCommandName </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an attach command using name </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac6f790fddc0f087933d1013ed2384c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6f790fddc0f087933d1013ed2384c9">&#9670;&nbsp;</a></span>runDetachCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runDetachCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an detach command using ip/port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2674a4eff194c0e51bfb92b5aa42a48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2674a4eff194c0e51bfb92b5aa42a48a">&#9670;&nbsp;</a></span>runDetachCommandName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runDetachCommandName </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an detach command using name </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a098ec9a654426c5eafd6e61674734736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098ec9a654426c5eafd6e61674734736">&#9670;&nbsp;</a></span>runMsgCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runMsgCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an msg command using ip/port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7993ac85ba60c2cb414a79a1e9e38b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7993ac85ba60c2cb414a79a1e9e38b6c">&#9670;&nbsp;</a></span>runMsgCommandName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runMsgCommandName </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an msg command using name </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07958f539ad1f48798c72e3efb488e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07958f539ad1f48798c72e3efb488e6f">&#9670;&nbsp;</a></span>runInfoCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runInfoCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an info command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb80f86802c502408b56bc6e8e179b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb80f86802c502408b56bc6e8e179b2b">&#9670;&nbsp;</a></span>runChildrenCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runChildrenCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an children command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa120e1691921fda8a44bd3453f9fce1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa120e1691921fda8a44bd3453f9fce1d">&#9670;&nbsp;</a></span>runParentsCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runParentsCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an parents command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22a7d457a7dae3bd3136485a57e264c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a7d457a7dae3bd3136485a57e264c5">&#9670;&nbsp;</a></span>runRoutingCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runRoutingCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an routes command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a660c019776f903e0776701300d7ee438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660c019776f903e0776701300d7ee438">&#9670;&nbsp;</a></span>runFileCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runFileCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run a file command using ip/port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab856b9ee59c3acfa84dccd9677dc981f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab856b9ee59c3acfa84dccd9677dc981f">&#9670;&nbsp;</a></span>runFileCommandName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runFileCommandName </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run a file command using name </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25b56e04f1bfa90e7dc698a27be72598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b56e04f1bfa90e7dc698a27be72598">&#9670;&nbsp;</a></span>runHelpCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runHelpCommand </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>localGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>routing_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>children_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run an help command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>args of the command, the first one is the command identifier (/attach, /detach ...) </td></tr>
+    <tr><td class="paramname">nb_arg</td><td>number of args of the command </td></tr>
+    <tr><td class="paramname">localGroup</td><td>the current process </td></tr>
+    <tr><td class="paramname">routing_list</td><td>subtree of current process </td></tr>
+    <tr><td class="paramname">children_list</td><td>children of current process </td></tr>
+    <tr><td class="paramname">parents_list</td><td>parents of current process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5:  Fichier source de handlers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">handlers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="handlers_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __HANDLERS_H__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __HANDLERS_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#ad131f037b769dd4da88867e481ff93d3">handeNewClientAttach</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * new_child_group, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#ab367142c0366141c61b7a8281dbac16d">handleDetach</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#a91444592a8e826ab348abe61eddc7042">handleMsg</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#a4f8439dd1f7b7c08ff70cc3ed41572bb">handleNotifAttach</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#aaddba1e2856ac12ef5b42b954ecd9670">handleNotifDetach</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="handlers_8h.html#a4546113da554aa4089cad80d03e4b078">handleFile</a>(<a class="code" href="structpayload.html">payload</a> * read_p, <a class="code" href="structgroup.html">group</a> * <a class="code" href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>, <a class="code" href="structnode.html">List</a> * <a class="code" href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> list.h:8</div></div>
+<div class="ttc" id="main_8c_html_a6d48be97020333efd8e73e7721a7a56c"><div class="ttname"><a href="main_8c.html#a6d48be97020333efd8e73e7721a7a56c">children_list</a></div><div class="ttdeci">List * children_list</div><div class="ttdef"><b>Definition:</b> main.c:32</div></div>
+<div class="ttc" id="main_8c_html_ad97aacd0a756248435713ea69caa1185"><div class="ttname"><a href="main_8c.html#ad97aacd0a756248435713ea69caa1185">routing_list</a></div><div class="ttdeci">List * routing_list</div><div class="ttdef"><b>Definition:</b> main.c:33</div></div>
+<div class="ttc" id="handlers_8h_html_a4546113da554aa4089cad80d03e4b078"><div class="ttname"><a href="handlers_8h.html#a4546113da554aa4089cad80d03e4b078">handleFile</a></div><div class="ttdeci">void handleFile(payload *read_p, group *localGroup, List *children_list, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:247</div></div>
+<div class="ttc" id="handlers_8h_html_aaddba1e2856ac12ef5b42b954ecd9670"><div class="ttname"><a href="handlers_8h.html#aaddba1e2856ac12ef5b42b954ecd9670">handleNotifDetach</a></div><div class="ttdeci">void handleNotifDetach(payload *read_p, group *localGroup, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:232</div></div>
+<div class="ttc" id="main_8c_html_ae4baea4e7cde317dff45a92a0c04b07a"><div class="ttname"><a href="main_8c.html#ae4baea4e7cde317dff45a92a0c04b07a">localGroup</a></div><div class="ttdeci">group * localGroup</div><div class="ttdef"><b>Definition:</b> main.c:34</div></div>
+<div class="ttc" id="structpayload_html"><div class="ttname"><a href="structpayload.html">payload</a></div><div class="ttdef"><b>Definition:</b> payload.h:20</div></div>
+<div class="ttc" id="handlers_8h_html_a91444592a8e826ab348abe61eddc7042"><div class="ttname"><a href="handlers_8h.html#a91444592a8e826ab348abe61eddc7042">handleMsg</a></div><div class="ttdeci">void handleMsg(payload *read_p, group *localGroup, List *children_list, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:153</div></div>
+<div class="ttc" id="handlers_8h_html_ad131f037b769dd4da88867e481ff93d3"><div class="ttname"><a href="handlers_8h.html#ad131f037b769dd4da88867e481ff93d3">handeNewClientAttach</a></div><div class="ttdeci">void handeNewClientAttach(payload *read_p, group *new_child_group, group *localGroup, List *children_list, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:39</div></div>
+<div class="ttc" id="structgroup_html"><div class="ttname"><a href="structgroup.html">group</a></div><div class="ttdef"><b>Definition:</b> group.h:7</div></div>
+<div class="ttc" id="main_8c_html_a9509e27a92e5fc3e98862a4c777c2371"><div class="ttname"><a href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a></div><div class="ttdeci">List * parents_list</div><div class="ttdef"><b>Definition:</b> main.c:31</div></div>
+<div class="ttc" id="handlers_8h_html_a4f8439dd1f7b7c08ff70cc3ed41572bb"><div class="ttname"><a href="handlers_8h.html#a4f8439dd1f7b7c08ff70cc3ed41572bb">handleNotifAttach</a></div><div class="ttdeci">void handleNotifAttach(payload *read_p, group *localGroup, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:210</div></div>
+<div class="ttc" id="handlers_8h_html_ab367142c0366141c61b7a8281dbac16d"><div class="ttname"><a href="handlers_8h.html#ab367142c0366141c61b7a8281dbac16d">handleDetach</a></div><div class="ttdeci">void handleDetach(payload *read_p, group *localGroup, List *children_list, List *parents_list, List *routing_list)</div><div class="ttdef"><b>Definition:</b> handlers.c:91</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

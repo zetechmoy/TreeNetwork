@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Référence du fichier utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="payload_8h_source.html">payload.h</a>&quot;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="utils_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a370dd92e92c5b6038bbc81e476ec8933"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a370dd92e92c5b6038bbc81e476ec8933">parseArgs</a> (char *cmd, char *args[])</td></tr>
+<tr class="separator:a370dd92e92c5b6038bbc81e476ec8933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4700cec4eb5fbc60fd04173a6cefbc4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a4700cec4eb5fbc60fd04173a6cefbc4f">getIP</a> (char *iface, struct in_addr *addr)</td></tr>
+<tr class="separator:a4700cec4eb5fbc60fd04173a6cefbc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff513150166d000b91ac2863258a0505"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#aff513150166d000b91ac2863258a0505">isRoot</a> (<a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *<a class="el" href="main_8c.html#a9509e27a92e5fc3e98862a4c777c2371">parents_list</a>)</td></tr>
+<tr class="separator:aff513150166d000b91ac2863258a0505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ddaa0424615393ed09ce3abb5144cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a16ddaa0424615393ed09ce3abb5144cb">historilog</a> (<a class="el" href="structpayload.html">payload</a> *p)</td></tr>
+<tr class="separator:a16ddaa0424615393ed09ce3abb5144cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab720ebc26700f32401d6f661f3a0c499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgroup.html">group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ab720ebc26700f32401d6f661f3a0c499">getGroupFromName</a> (char *group_name, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *l)</td></tr>
+<tr class="separator:ab720ebc26700f32401d6f661f3a0c499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae790368b9ac78c12f295d0831b8ab70f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgroup.html">group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ae790368b9ac78c12f295d0831b8ab70f">getGroupFromIPPort</a> (char *ip, int port, <a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *l)</td></tr>
+<tr class="separator:ae790368b9ac78c12f295d0831b8ab70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8324b80cf1c3ddc356f274720178818c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a8324b80cf1c3ddc356f274720178818c">deleteLineBreaks</a> (char *str)</td></tr>
+<tr class="separator:a8324b80cf1c3ddc356f274720178818c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a370dd92e92c5b6038bbc81e476ec8933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370dd92e92c5b6038bbc81e476ec8933">&#9670;&nbsp;</a></span>parseArgs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseArgs </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>args</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse a command </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>the command to parse </td></tr>
+    <tr><td class="paramname">args</td><td>where will be stored arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>number of args in cmd </dd></dl>
+
+</div>
+</div>
+<a id="a4700cec4eb5fbc60fd04173a6cefbc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4700cec4eb5fbc60fd04173a6cefbc4f">&#9670;&nbsp;</a></span>getIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getIP </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>iface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct in_addr *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get IP from an interface name </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iface</td><td>the interface name </td></tr>
+    <tr><td class="paramname">addr</td><td>wher will be stored the ip </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff513150166d000b91ac2863258a0505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff513150166d000b91ac2863258a0505">&#9670;&nbsp;</a></span>isRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isRoot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>parents_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check if the current process is root of a group </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parents_list</td><td>parents of current group </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 if current group is a root else 0 </dd></dl>
+
+</div>
+</div>
+<a id="a16ddaa0424615393ed09ce3abb5144cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ddaa0424615393ed09ce3abb5144cb">&#9670;&nbsp;</a></span>historilog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void historilog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a payload to an history file </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the payload to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab720ebc26700f32401d6f661f3a0c499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab720ebc26700f32401d6f661f3a0c499">&#9670;&nbsp;</a></span>getGroupFromName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgroup.html">group</a>* getGroupFromName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>group_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a group from it's name in list l </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>the name of the oayload to find </td></tr>
+    <tr><td class="paramname">l</td><td>the list to retrieve group_name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>the group if found else NULL </dd></dl>
+
+</div>
+</div>
+<a id="ae790368b9ac78c12f295d0831b8ab70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae790368b9ac78c12f295d0831b8ab70f">&#9670;&nbsp;</a></span>getGroupFromIPPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgroup.html">group</a>* getGroupFromIPPort </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#aa4ccd50c5e1ac1a087ddca7d3a51a0c1">List</a> *&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a group from it's ip/port </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>the ip of the oayload to find </td></tr>
+    <tr><td class="paramname">port</td><td>the port of the oayload to find </td></tr>
+    <tr><td class="paramname">l</td><td>the list to retrieve group_name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>the group if found else NULL </dd></dl>
+
+</div>
+</div>
+<a id="a8324b80cf1c3ddc356f274720178818c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8324b80cf1c3ddc356f274720178818c">&#9670;&nbsp;</a></span>deleteLineBreaks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteLineBreaks </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete all useless <br />
+ in a string </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>the string where <br />
+ will be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

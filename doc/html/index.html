@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Projet Réseau G5</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Projet Réseau G5 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>An implementation of a network using trees, based on CTOP [<a href="https://cedric.cnam.fr/fichiers/RC209.pdf">https://cedric.cnam.fr/fichiers/RC209.pdf</a>](URL)</p>
+<h2>Installation</h2>
+<div class="fragment"><div class="line">git clone git@gitlab.insa-cvl.fr:projet-reseau-3a/groupe-5.git groupe-5</div><div class="line">cd groupe-5</div></div><!-- fragment --> <h3>Install in folder</h3>
+<div class="fragment"><div class="line">make clean</div><div class="line">make</div></div><!-- fragment --><h3>Install in global</h3>
+<div class="fragment"><div class="line">make clean</div><div class="line">make install</div></div><!-- fragment --><h2>Use</h2>
+<div class="fragment"><div class="line">./app {internet_interface} {name}</div></div><!-- fragment --><p> Example</p>
+<div class="fragment"><div class="line">./app wlp1s0 insa</div></div><!-- fragment --><p>Then use the /help command to get informations about what to do </p><div class="fragment"><div class="line">Wait for action or enter command :</div><div class="line">/help</div><div class="line">**/attach [PARENT_PORT] [PARENT_IP] **</div><div class="line">    =&gt; attach current process to a group by its ip/port</div><div class="line">**/attna [PARENT_NAME] **</div><div class="line">    =&gt; attach current process to a group by its name /!\ NOT IMPLEMENTED YET</div><div class="line">**/detach [GROUP_PORT] **</div><div class="line">    =&gt; detach current process from another (parent or child) by its port</div><div class="line">**/detna [GROUP_NAME] **</div><div class="line">    =&gt; detach current process from another (parent or child) by its name</div><div class="line">**/msg [GROUP_PORT] [GROUP_IP] &quot;MSG&quot; **</div><div class="line">    =&gt; send a message to a group using ip/port of the group, all children of this group will receive this message</div><div class="line">**/msgna [GROUP_NAME] &quot;MSG&quot; **</div><div class="line">    =&gt; send a message to a group using name of the group, all children of this group will receive this message</div><div class="line">**/info**</div><div class="line">    =&gt; show current process name, ip and port</div><div class="line">**/children **</div><div class="line">    =&gt; show children of current process</div><div class="line">**/parents **</div><div class="line">    =&gt; show parents of current process</div><div class="line">**/routes **</div><div class="line">    =&gt; show routes (children and children of children and ...) of current process</div><div class="line">**/help **</div><div class="line">    =&gt; show this help message</div><div class="line">**/exit **</div><div class="line">    =&gt; stop current process, children will attach to all of current parents</div></div><!-- fragment --><h2>Authors</h2>
+<ul>
+<li>Théo Guidoux</li>
+<li>Clément Foissard</li>
+<li>Clément Charpentier</li>
+<li>Pierre Vinois </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

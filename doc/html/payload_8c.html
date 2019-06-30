@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Réseau G5: Référence du fichier payload.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Réseau G5
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">A network implementation using trees</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier payload.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="payload_8h_source.html">payload.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="group_8h_source.html">group.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:af40c86b133f8f4253fc1c0474dab0889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpayload.html">payload</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payload_8c.html#af40c86b133f8f4253fc1c0474dab0889">createPayload</a> (int ptype, int sender_port, char *sender_ip, char *sender_name, int recver_port, char *recver_ip, char *recver_name, char *content)</td></tr>
+<tr class="separator:af40c86b133f8f4253fc1c0474dab0889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcb064db5e77e31199e1a15ee8fe0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpayload.html">payload</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payload_8c.html#aadcb064db5e77e31199e1a15ee8fe0fa">createPayloadFromGroups</a> (int ptype, <a class="el" href="structgroup.html">group</a> *sender_group, <a class="el" href="structgroup.html">group</a> *recver_group, char *content)</td></tr>
+<tr class="separator:aadcb064db5e77e31199e1a15ee8fe0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fc8b09a55e65b1d322980e031be009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpayload.html">payload</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payload_8c.html#a64fc8b09a55e65b1d322980e031be009">createEmptyPayload</a> ()</td></tr>
+<tr class="separator:a64fc8b09a55e65b1d322980e031be009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab07c8e409bdcc53b8955522d2e65e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payload_8c.html#a3ab07c8e409bdcc53b8955522d2e65e5">displayPayload</a> (<a class="el" href="structpayload.html">payload</a> *p)</td></tr>
+<tr class="separator:a3ab07c8e409bdcc53b8955522d2e65e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="af40c86b133f8f4253fc1c0474dab0889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af40c86b133f8f4253fc1c0474dab0889">&#9670;&nbsp;</a></span>createPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpayload.html">payload</a>* createPayload </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ptype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sender_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>sender_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>sender_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recver_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>recver_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>recver_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a payload </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptype</td><td>the type of the payload : PTYPE_MSG, PTYPE_MSGROOT, PTYPE_ATTACH, PTYPE_BRDCST, PTYPE_DETACHFC, PTYPE_DETACHFP, PTYPE_NOTIFATT, PTYPE_NOTIFDET </td></tr>
+    <tr><td class="paramname">sender_port</td><td>the port of the sender group </td></tr>
+    <tr><td class="paramname">sender_ip</td><td>the ip of the sender group </td></tr>
+    <tr><td class="paramname">sender_name</td><td>the name of the sender group </td></tr>
+    <tr><td class="paramname">recver_port</td><td>the port of the receiver group </td></tr>
+    <tr><td class="paramname">recver_ip</td><td>the ip of the receiver group </td></tr>
+    <tr><td class="paramname">recver_name</td><td>the name of the receiver group </td></tr>
+    <tr><td class="paramname">content</td><td>content of the payload </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>the created payload </dd></dl>
+
+</div>
+</div>
+<a id="aadcb064db5e77e31199e1a15ee8fe0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcb064db5e77e31199e1a15ee8fe0fa">&#9670;&nbsp;</a></span>createPayloadFromGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpayload.html">payload</a>* createPayloadFromGroups </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ptype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>sender_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgroup.html">group</a> *&#160;</td>
+          <td class="paramname"><em>recver_group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a payload </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptype</td><td>the type of the payload : PTYPE_MSG, PTYPE_MSGROOT, PTYPE_ATTACH, PTYPE_BRDCST, PTYPE_DETACHFC, PTYPE_DETACHFP, PTYPE_NOTIFATT, PTYPE_NOTIFDET </td></tr>
+    <tr><td class="paramname">sender_group</td><td>the sender group </td></tr>
+    <tr><td class="paramname">recver_group</td><td>the sender group </td></tr>
+    <tr><td class="paramname">content</td><td>content of the payload </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>the created payload </dd></dl>
+
+</div>
+</div>
+<a id="a64fc8b09a55e65b1d322980e031be009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64fc8b09a55e65b1d322980e031be009">&#9670;&nbsp;</a></span>createEmptyPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpayload.html">payload</a>* createEmptyPayload </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a payload with initialized values wich will be filled after </p>
+
+</div>
+</div>
+<a id="a3ab07c8e409bdcc53b8955522d2e65e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab07c8e409bdcc53b8955522d2e65e5">&#9670;&nbsp;</a></span>displayPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void displayPayload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpayload.html">payload</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Show attributes of a paylaod </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the payload to show </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
